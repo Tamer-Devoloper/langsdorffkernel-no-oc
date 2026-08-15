@@ -1,6 +1,6 @@
 #!/bin/bash
 
-XY_VERSION="@3.6p"
+XY_VERSION="@5.1"
 
 set -e
 
@@ -45,7 +45,7 @@ BUILD_TOOLS_REPO="https://android.googlesource.com/platform/prebuilts/build-tool
 
 # Kernel-side
 GIT_COMMIT=$(git rev-parse --short HEAD)
-BUILD_ARGS="LOCALVERSION=-langsdorff${XY_VERSION}-${GIT_COMMIT} KBUILD_BUILD_USER=Langsdorff KBUILD_BUILD_HOST=langsdorff"
+BUILD_ARGS="LOCALVERSION=-Tamer${XY_VERSION}-${GIT_COMMIT} KBUILD_BUILD_USER=Tamer KBUILD_BUILD_HOST=Tamer"
 kfinish() {
     rm -rf "$TMPDIR"
 #    rm -rf "$OUTDIR"
